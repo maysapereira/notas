@@ -6,10 +6,15 @@ class FormularioCadastro extends Component {
     constructor() {
         super()
         this.titulo = ""
+        this.texto = ""
 
     }
     handleMudancaTitulo(evento) {
         this.titulo = evento.target.value
+    }
+
+    handleMudancaTexto(evento) {
+        this.texto - evento.target.value
     }
 
     render(){
@@ -27,6 +32,7 @@ class FormularioCadastro extends Component {
                 rows={15}
                 placeholder="Escreva sua nota..."
                 className="form-cadastro_input"
+                onChange={this.handleMudancaTexto.bind(this)}
                 />
 
                 <button className="form-cadastro_input form-cadastro_submit">
