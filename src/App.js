@@ -1,15 +1,18 @@
-import React from "react"
-import { FormularioCadastro } from "./componentes/FormularioCadastro";
-import { ListaDeNotas } from "./componentes/listaDeNotas";
+import React, { Component } from "react"
+import FormularioCadastro from "./componentes/FormularioCadastro";
+import ListaDeNotas from "./componentes/ListaDeNotas";
 
-function App() {
-  return (
-    <>
-      <FormularioCadastro/>
-      <ListaDeNotas/>
-      </>
+class App extends Component {
 
-  );
+  render() {
+    return (
+      <>
+        <FormularioCadastro/>
+        <ListaDeNotas/>
+        </>
+  
+    );
+  }
 }
 
 export default App;

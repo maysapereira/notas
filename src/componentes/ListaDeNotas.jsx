@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import CardNota from "./CardNota";
 
-export class ListaDeNotas extends Component {
+class ListaDeNotas extends Component {
 
     render() {
         return(
@@ -16,8 +16,9 @@ export class ListaDeNotas extends Component {
                 <li>
                     <CardNota/>
                 </li>
-                </ul>
+            </ul>
         )
     }
-
 }
+
+export default ListaDeNotas;
